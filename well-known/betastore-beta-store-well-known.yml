@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of https://betastore.co and https://www.betastore.co
+host: https://betastore.co
+result: none
+notes: >-
+  No /.well-known/ documents are served. Both the apex (betastore.co) and www
+  hosts answer every path with a blanket Cloudflare-level HTTP 301 to an
+  unrelated third-party domain (observed targets rotate: batchesmke.com,
+  youngstoryweavers.com), so no document — including robots.txt and sitemap.xml
+  — is retrievable. No document was saved because none was served. This is a
+  recorded negative result, not a fabrication.
+documents:
+- path: /.well-known/security.txt
+  status: 301
+  redirects_offsite: true
+- path: /.well-known/openid-configuration
+  status: 301
+  redirects_offsite: true
+- path: /.well-known/oauth-authorization-server
+  status: 301
+  redirects_offsite: true
+- path: /.well-known/api-catalog
+  status: 301
+  redirects_offsite: true
+- path: /.well-known/ai-plugin.json
+  status: 301
+  redirects_offsite: true
+- path: /llms.txt
+  status: 301
+  redirects_offsite: true
+- path: /robots.txt
+  status: 301
+  redirects_offsite: true
+- path: /sitemap.xml
+  status: 301
+  redirects_offsite: true
+subdomains_probed:
+- {host: api.betastore.co, dns: NXDOMAIN}
+- {host: app.betastore.co, dns: NXDOMAIN}
+- {host: docs.betastore.co, dns: NXDOMAIN}
+- {host: dev.betastore.co, dns: NXDOMAIN}
+- {host: portal.betastore.co, dns: NXDOMAIN}
+- {host: shop.betastore.co, dns: NXDOMAIN}
+- {host: retailer.betastore.co, dns: NXDOMAIN}
+- {host: admin.betastore.co, dns: NXDOMAIN}
+- {host: blog.betastore.co, dns: NXDOMAIN}
+- {host: status.betastore.co, dns: NXDOMAIN}
