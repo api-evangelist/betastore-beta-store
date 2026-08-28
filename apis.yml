@@ -14,6 +14,17 @@ description: >-
   betastore.co domain serves no content -- both the apex and www hosts answer every path with a
   blanket Cloudflare 301 to unrelated third-party domains, and no api/app/docs subdomain resolves.
 url: https://raw.githubusercontent.com/api-evangelist/betastore-beta-store/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
