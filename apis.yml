@@ -1,18 +1,17 @@
 aid: betastore-beta-store
-name: BetaStore, Beta Store
-description: >-
-  BetaStore (legal entity SimpleMarket Inc., trading as BetaStore.co) is a B2B retail marketplace
-  founded in 2020 by Steve Dakayi-Kamga and Leo-Armel Tchoudjang that serves informal neighborhood
-  retailers in West and Central Africa, operating across Nigeria, Senegal and Ivory Coast from
-  offices in Lagos and a Wilmington, Delaware registration. The platform lets small shopkeepers
-  restock fast-moving consumer goods directly from manufacturers and distributors at wholesale
-  prices, ordering through SMS, chat, WhatsApp and a mobile app, with logistics partners delivering
-  to the store within 24 hours, and it layers embedded working-capital financing on top of observed
-  retailer sales. BetaStore raised a 2.5 million dollar pre-Series A in May 2022 led by 500 Global
-  with VestedWorld and Loyal VC. As of the July 2026 enrichment pass BetaStore publishes no public
-  API, developer portal, documentation, SDK or machine-readable artifact of any kind, and its
-  betastore.co domain serves no content -- both the apex and www hosts answer every path with a
-  blanket Cloudflare 301 to unrelated third-party domains, and no api/app/docs subdomain resolves.
+name: BetaStore
+description: BetaStore (legal entity SimpleMarket Inc., trading as BetaStore.co) is a B2B retail marketplace
+  founded in 2020 by Steve Dakayi-Kamga and Leo-Armel Tchoudjang that serves informal neighborhood retailers
+  in West and Central Africa, operating across Nigeria, Senegal and Ivory Coast from offices in Lagos
+  and a Wilmington, Delaware registration. The platform lets small shopkeepers restock fast-moving consumer
+  goods directly from manufacturers and distributors at wholesale prices, ordering through SMS, chat,
+  WhatsApp and a mobile app, with logistics partners delivering to the store within 24 hours, and it layers
+  embedded working-capital financing on top of observed retailer sales. BetaStore raised a 2.5 million
+  dollar pre-Series A in May 2022 led by 500 Global with VestedWorld and Loyal VC. As of the July 2026
+  enrichment pass BetaStore publishes no public API, developer portal, documentation, SDK or machine-readable
+  artifact of any kind, and its betastore.co domain serves no content -- both the apex and www hosts answer
+  every path with a blanket Cloudflare 301 to unrelated third-party domains, and no api/app/docs subdomain
+  resolves.
 url: https://raw.githubusercontent.com/api-evangelist/betastore-beta-store/refs/heads/main/apis.yml
 deliveryModel:
   model: unknown
@@ -33,11 +32,13 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://betastore.co
+    status: 301
+    note: declared website redirects to https://slotsdemoplaywin.com/ — a different registrable domain
+      (betastore.co -> slotsdemoplaywin.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://betastore.co', status: 301, note: 'declared website redirects to https://slotsdemoplaywin.com/ — a different registrable domain (betastore.co -> slotsdemoplaywin.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/betastore-beta-store.png
 x-type: company
 x-source: vc-portfolio
@@ -47,7 +48,7 @@ x-tier: stub
 x-tier-reason: no-public-api-surface
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-09-15'
 tags:
 - Company
 - B2B Marketplace
@@ -76,3 +77,5 @@ x-enrichment:
   status: minimal
   artifacts_added: 2
   pass: local-v1
+x-aliases:
+- Beta Store
